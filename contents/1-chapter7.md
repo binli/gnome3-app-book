@@ -3,12 +3,18 @@
 > Multimedia capabilities are one of the strong points of GNOME. It provides numerous APIs for developers to easily present multimedia content. This opens quite a broad spectrum of application ideas that can be implemented; for example, a simple audio/video conversion tool, a music or video stream player, CCTV monitoring, or a full-blown education application, to name a few.
 
 In this chapter, we will take a look at the basic usage of GStreamer by presenting audio and video content with the GStreamer API. Specifically, we will discuss the following:
+在本章节中我们将了解一些使用 GStreamer API 来展示音频和视频的基本用法.
+明确来说我们将讨论下面的内容:
 
 - The GStreamer concept
 - Playing audio and video
 - Applying filters to stream
+- GStreamer 概念
+- 播放音频和视频
+- 对流使用过滤器
 
 Let's get into more detail now.
+现在就开始吧!
 
 ## Packages required
 
@@ -16,18 +22,23 @@ This chapter uses software, namely the MPEG codecs, which are not freely availab
 default Linux distribution repositories. Fedora users need to add a third-party repository in
 order to be able to use the software. Type the following command on the terminal to add
 this third-party library:
+本章节将使用 MPEG 编解码软件,它并不在缺省的 Linux 发行版的仓库中.
+Fedora 需要第三方的仓库来使用这个软件.
+在终端中输入下面的在命令来安装第三方的库:
 
 ````
 su -c 'yum localinstall --nogpgcheck http://download1.rpmfusion.org/
 free/fedora/rpmfusion-free-release-stable.noarch.rpm http://download1.
-rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm'Having Fun with Multimedia
+rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm'
 ````
 
 The following packages need to be installed:
+下面的是需要安装的包:
 - **Fedora**: gstreamer-plugins-bad , gstreamer-plugins-ugly , gstreamer-ffmpeg , and gstreamer-tools
 - **Ubuntu/Debian**: gstreamer0.10-plugins-bad , gstreamer0.10-plugins-ugly , gstreamer0.10-plugins-ffmpeg , gstreamer0.10-tools , and libgstreamer-plugins-base0.10-dev
 
 ## Understanding the basic concept of GStreamer
+## 理解 GStreamer 的基本概念
 
 **GStreamer** is a media-processing framework used by GNOME to support its multimedia
 feature. It has a plugin infrastructure which provides an abstraction layer for opening,
