@@ -1,0 +1,21 @@
+[Anjuta]
+Maximized=1
+Geometry=1600x861+0+0
+
+[File Loader]
+Files=../../src/hello_vala.vala#15%%%../../src/book.vala#1
+
+[Document Manager]
+bookmarks=<?xml version="1.0" encoding="UTF-8"?>\n<bookmarks/>\n
+
+[Execution]
+Program uri=../../src/hello_vala
+Run in terminal=2
+Working directories=../../.
+
+[Project Manager]
+Shortcut=hello-vala//src//hello_vala
+Expand=hello-vala%%%hello-vala//src%%%hello-vala//src//hello_vala
+
+[Debugger]
+Stop at beginning=2

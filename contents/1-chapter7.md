@@ -14,6 +14,7 @@ In this chapter, we will take a look at the basic usage of GStreamer by presenti
 - 对流使用过滤器
 
 Let's get into more detail now.
+
 现在就开始吧!
 
 ## Packages required
@@ -22,8 +23,11 @@ This chapter uses software, namely the MPEG codecs, which are not freely availab
 default Linux distribution repositories. Fedora users need to add a third-party repository in
 order to be able to use the software. Type the following command on the terminal to add
 this third-party library:
+
 本章节将使用 MPEG 编解码软件,它并不在缺省的 Linux 发行版的仓库中.
+
 Fedora 需要第三方的仓库来使用这个软件.
+
 在终端中输入下面的在命令来安装第三方的库:
 
 ````
@@ -33,7 +37,9 @@ rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm'
 ````
 
 The following packages need to be installed:
+
 下面的是需要安装的包:
+
 - **Fedora**: gstreamer-plugins-bad , gstreamer-plugins-ugly , gstreamer-ffmpeg , and gstreamer-tools
 - **Ubuntu/Debian**: gstreamer0.10-plugins-bad , gstreamer0.10-plugins-ugly , gstreamer0.10-plugins-ffmpeg , gstreamer0.10-tools , and libgstreamer-plugins-base0.10-dev
 
@@ -93,3 +99,17 @@ events delivered.
 The events—or in GStreamer terms, messages—are delivered through a bus. The bus is
 created by the pipeline. And by tapping into the bus, we can subscribe to the messages
 posted there.
+
+
+## 小结
+
+In this chapter, we have learned how to play both audio and video files using GStreamer. We
+also discussed the basics of GStreamer. We know how it works and we know how to wire
+the elements of GStreamer in order to play our media. We can prototype the stream flow
+design with command line and then implement it afterwards. Finally, we learned how to put
+GStreamer together with GTK+ widgets.
+在本章节我们了解了如何用 GStreamer 播放音频和视频文件。
+我们也讲述了 GStreamer 的基本概念，了解它的工作原理及如何装配。。。
+
+Our next stop in Chapter 8, Playing with Data, is to play with data. It does not mean data
+only from databases, but data that comes from various sources.
